@@ -1,6 +1,6 @@
 
-# Use kalilinux/kali-rolling as the base image
-FROM ubuntu:latest
+# Use centos:latest as the base image
+FROM centos:latest
 
 # Update packages and install locales
 RUN apt update -y > /dev/null 2>&1 && apt upgrade -y > /dev/null 2>&1 && apt install locales -y \
