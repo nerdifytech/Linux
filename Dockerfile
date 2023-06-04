@@ -1,6 +1,6 @@
 
 # Use kalilinux/kali-rolling as the base image
-FROM ubuntu:latest
+FROM kalilinux/kali-rolling
 
 # Update packages and install locales
 RUN apt update -y > /dev/null 2>&1 && apt upgrade -y > /dev/null 2>&1 && apt install locales -y \
